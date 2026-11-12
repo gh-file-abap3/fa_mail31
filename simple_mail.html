@@ -1,19 +1,83 @@
 <!DOCTYPE html>
-
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осенняя таблица</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            background: #f7efe3;
+            color: #493525;
+            font-family: Georgia, "Times New Roman", serif;
+        }
 
+        p {
+            margin: 0 0 1.25rem;
+            color: #70452d;
+            font-size: 1.2rem;
+        }
+
+        table {
+            width: 100%;
+            max-width: 760px;
+            border: 1px solid #d8b58c;
+            border-spacing: 0;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #fffaf2;
+            box-shadow: 0 10px 24px rgba(98, 57, 28, 0.14);
+        }
+
+        th,
+        td {
+            padding: 1rem 1.25rem;
+            text-align: left;
+        }
+
+        th {
+            background: linear-gradient(135deg, #a94725, #d47a32);
+            color: #fff8e9;
+            font-size: 1rem;
+            letter-spacing: 0.04em;
+        }
+
+        td {
+            border-top: 1px solid #ead8c1;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f3e5d1;
+        }
+
+        tbody tr:hover {
+            background: #f8d9ad;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                padding: 1rem;
+            }
+
+            th,
+            td {
+                padding: 0.75rem 0.6rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
     <p>Доброго ноябрьского дня!</p>
 
     <table>
-        <tr>
-            <th>Колонка 1</th>
-            <th>Колонка 2</th>
-            <th>Колонка 3</th>
-        </tr>
+        <thead>
+            <tr>
+                <th scope="col">Колонка 1</th>
+                <th scope="col">Колонка 2</th>
+                <th scope="col">Колонка 3</th>
+            </tr>
+        </thead>
     </table>
 </body>
-
 </html>

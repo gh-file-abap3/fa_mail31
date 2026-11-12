@@ -3,84 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Approval Request</title>
+    <meta name="color-scheme" content="light">
+    <title>Approval required: [Project/Document Title]</title>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f4f6f9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;">
-
-    <!-- Email Container -->
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f4f6f9; padding: 40px 10px;">
+<body style="margin: 0; padding: 0; background-color: #f1f5f9; font-family: Arial, Helvetica, sans-serif; color: #1e293b;">
+    <div style="display: none; max-height: 0; overflow: hidden; opacity: 0; color: transparent;">
+        [Approver Name], a request from [Requester Name] is waiting for your review.
+    </div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#f1f5f9">
         <tr>
-            <td align="center">
-                
-                <!-- Main Card -->
-                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
-                    
-                    <!-- Header -->
+            <td align="center" style="padding: 32px 12px;">
+                <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="width: 100%; max-width: 600px; background-color: #ffffff; border: 1px solid #e2e8f0;">
                     <tr>
-                        <td style="background-color: #2563eb; padding: 24px 32px; text-align: left;">
-                            <h1 style="color: #ffffff; margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.2px;">
-                                Approval Required
-                            </h1>
+                        <td bgcolor="#1d4ed8" style="padding: 24px 32px; background-color: #1d4ed8;">
+                            <p style="margin: 0 0 6px; color: #dbeafe; font-size: 12px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase;">Approval notification</p>
+                            <h1 style="margin: 0; color: #ffffff; font-size: 22px; line-height: 1.3;">Action required</h1>
                         </td>
                     </tr>
-
-                    <!-- Body Content -->
                     <tr>
-                        <td style="padding: 32px; text-align: left;">
-                            <p style="margin: 0 0 16px 0; color: #1e293b; font-size: 16px; line-height: 1.5;">
-                                Hi <strong>[Approver Name]</strong>,
-                            </p>
-                            <p style="margin: 0 0 24px 0; color: #475569; font-size: 15px; line-height: 1.6;">
-                                A new request requires your review and approval. Please check the details below and take action at your earliest convenience.
+                        <td style="padding: 32px;">
+                            <p style="margin: 0 0 16px; font-size: 16px; line-height: 1.5;">Hello <strong>[Approver Name]</strong>,</p>
+                            <p style="margin: 0 0 24px; color: #475569; font-size: 15px; line-height: 1.6;">
+                                <strong>[Requester Name]</strong> submitted a request that needs your review. Please review the information and choose an action below.
                             </p>
 
-                            <!-- Details Card -->
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 24px;">
+                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#f8fafc" style="border: 1px solid #e2e8f0;">
                                 <tr>
-                                    <td style="padding: 20px;">
+                                    <td style="padding: 20px 22px;">
+                                        <h2 style="margin: 0 0 12px; color: #334155; font-size: 14px; line-height: 1.4;">Request details</h2>
                                         <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
-                                                <td style="padding-bottom: 10px; color: #64748b; font-size: 13px; font-weight: 600; text-transform: uppercase;">Request Details</td>
+                                                <td width="140" valign="top" style="padding: 7px 12px 7px 0; color: #64748b; font-size: 14px;">Title</td>
+                                                <td valign="top" style="padding: 7px 0; color: #1e293b; font-size: 14px; font-weight: bold;">[Project/Document Title]</td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 6px 0; color: #334155; font-size: 14px;">
-                                                    <strong>Title:</strong> [Project/Document Title]
-                                                </td>
+                                                <td width="140" valign="top" style="padding: 7px 12px 7px 0; color: #64748b; font-size: 14px;">Requested by</td>
+                                                <td valign="top" style="padding: 7px 0; color: #1e293b; font-size: 14px;">[Requester Name]</td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 6px 0; color: #334155; font-size: 14px;">
-                                                    <strong>Requested By:</strong> [Requester Name]
-                                                </td>
+                                                <td width="140" valign="top" style="padding: 7px 12px 7px 0; color: #64748b; font-size: 14px;">Submitted</td>
+                                                <td valign="top" style="padding: 7px 0; color: #1e293b; font-size: 14px;">[Submission Date]</td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 6px 0; color: #334155; font-size: 14px;">
-                                                    <strong>Submission Date:</strong> [Date, e.g., Nov 11, 2026]
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding: 6px 0; color: #334155; font-size: 14px;">
-                                                    <strong>Amount / Impact:</strong> [Optional: e.g., $1,500.00]
-                                                </td>
+                                                <td width="140" valign="top" style="padding: 7px 12px 7px 0; color: #64748b; font-size: 14px;">Amount / impact</td>
+                                                <td valign="top" style="padding: 7px 0; color: #1e293b; font-size: 14px;">[Amount or impact, if applicable]</td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
                             </table>
 
-                            <!-- Description/Notes -->
-                            <p style="margin: 0 0 24px 0; color: #475569; font-size: 14px; line-height: 1.6;">
-                                <strong>Description:</strong><br>
-                                [Insert a brief description or justification for this approval request.]
-                            </p>
+                            <h2 style="margin: 24px 0 8px; color: #334155; font-size: 14px; line-height: 1.4;">Description</h2>
+                            <p style="margin: 0 0 24px; color: #475569; font-size: 14px; line-height: 1.6;">[Brief description or justification for this request.]</p>
 
-                            <!-- Action Buttons -->
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-top: 28px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                                 <tr>
-                                    <td align="center">
-                                        <!-- Primary Approve Button -->
-                                        <a href="[Approve Link]" style="display: inline-block; background-color: #16a34a; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 12px 28px; border-radius: 6px; margin-right: 8px;">
-                                            Approve
-                                        </a>
-                                        <!-- Secondary Reject Button -->
-                                        <a href="[Reject Link]" style="display: inline-block; background-color: #dc2626; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 12px 28px; border-radius: 6px;">
-                                            Reject
+                                    <td align="center" bgcolor="#15803d" style="background-color: #15803d;">
+                                        <a href="[Approve Link]" style="display: inline-block; padding: 13px 24px; color: #ffffff; font-size: 14px; font-weight: bold; line-height: 1; text-decoration: none;">Approve</a>
+                                    </td>
+                                    <td width="12" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                    <td align="center" bgcolor="#ffffff" style="border: 1px solid #cbd5e1;">
+                                        <a href="[Reject Link]" style="display: inline-block; padding: 12px 24px; color: #334155; font-size: 14px; font-weight: bold; line-height: 1; text-decoration: none;">Reject</a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="margin: 24px 0 0; color: #64748b; font-size: 13px; line-height: 1.6;">
+                                If the buttons do not work, copy and paste the appropriate link into your browser:<br>
+                                Approve: <a href="[Approve Link]" style="color: #1d4ed8; word-break: break-all;">[Approve Link]</a><br>
+                                Reject: <a href="[Reject Link]" style="color: #1d4ed8; word-break: break-all;">[Reject Link]</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#f8fafc" style="padding: 18px 32px; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">
+                            <p style="margin: 0; color: #64748b; font-size: 12px; line-height: 1.6;">
+                                This is an automated notification. Please do not reply to this email.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
